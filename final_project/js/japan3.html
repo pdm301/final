@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <style>
+
+        .sphere {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: red;
+            vertical-align: middle;
+            box-shadow: -5px -5px 5px black, inset 0px 0px 1px black;
+            display: inline-block;
+            margin: 5%;
+            position: absolute;
+            top:5% !important;
+            left:-40% !important;
+            border-radius: 50%;
+            display: none;
+
+        }
+
+        #final{
+            position:absolute;
+            top:0 !important;
+            left:-1% !important;
+            max-width:100%;
+        }
+
+
+        html,
+        body {
+
+            background-color: white;
+            max-width: 100%;
+            max-height:100%;
+            top: -50px;
+            overflow: hidden;
+
+        }
+
+
+        .randomAbsolute {
+            position:absolute;
+            top:0;
+            left:-20%;
+            display: none;
+
+        }
+        #outline {
+            position:absolute;
+            top:0 !important;
+            left:-20% !important;
+            max-width:100%;
+        }
+
+        .random {
+            position:absolute;
+            display: none;
+            padding:10px;
+
+        }
+
+        .random2 {
+            position:absolute;
+            display: none;
+            padding:10px;
+
+        }
+
+        .random3 {
+            position:absolute;
+            display: none;
+            padding:10px;
+
+        }
+
+        .random4 {
+            position:absolute;
+            display: none;
+            padding:10px;
+
+        }
+
+        .clear {
+            clear:both;
+        }
+
+    </style>
+
+
+    <script>
+
+        let i=1;
+        let rd ;
+
+        function StartOrStop(audioFile) {
+            var audie = document.getElementById("myAudio");
+            if (!audie.src || audie.src !== audioFile) audie.src = audioFile;
+            if (audie.paused == false)
+                audie.pause();
+            else
+                audie.play();
+
+        }
+
+        function init() {
+            w = document.body.offsetWidth;
+            h = document.body.offsetHeight;
+            rd = document.getElementsByTagName('div');
+            console.log(rd);
+
+            for (c = 0; c < rd.length; c++) {
+                if (rd[c].className == 'random') {
+                    xCoord = Math.floor(Math.random() * w);
+                    yCoord = Math.floor(Math.random() * h);
+                }
+
+
+                if (rd[c].className == 'random2') {
+                    xCoord = Math.floor(Math.random() * w) - 100;
+                    yCoord = Math.floor(Math.random() * h) + 100;
+                }
+
+
+                if (rd[c].className == 'random3') {
+                    xCoord = Math.floor(Math.random() * w) - 231;
+                    yCoord = Math.floor(Math.random() * h) + 250;
+                }
+
+
+                if (rd[c].className == 'random4') {
+                    xCoord = Math.floor(Math.random() * w) - 50;
+                    yCoord = Math.floor(Math.random() * h) + 500;
+
+                }
+
+                rd[c].style.left = xCoord + 'px';
+                rd[c].style.top = yCoord + 'px';
+
+            }
+
+
+            function display2(){
+
+                if(i < rd.length){
+                    rd[i].style.display = "block";
+                    i++;
+
+                }
+            }
+            setInterval(display2, 50)
+        }
+        window.addEventListener ? window.addEventListener('load', init, false) : window.attachEvent('onload', init);
+    </script>
+
+</head>
+
+
+
+
+<div class="random2" > <img src="Japan/1.png" width="343" height="200" alt="Japan Symbol" ></div>
+<div class="random2" > <img src="Japan/2.png" width="343" height="200" alt="Japan Symbol"> </div>
+<div class="random2" > <img src="Japan/3.png" width="351" height="351" alt="Japan Symbol"> </div>
+<div class="random2" > <img src="Japan/4.png" width="343" height="200" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/5.png" width="343" height="200" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/6.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/7.gif" width="300" height="300" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/8.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/9.png" width="175" height="175" alt="Japan Sym bol" > </div>
+<div class="random2" > <img src="Japan/10.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/11.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/12.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/13.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/14.png" width="275" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/15.png" width="275" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/16.png" width="375" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/17.png" width="375" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/18.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/19.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/20.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/21.gif" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/22.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/23.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/24.gif" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/25.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/26.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/27.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/28.png" width="375" height="375" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/29.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/30.png" width="300" height="200" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/31.png" width="300" height="175" alt="Japan Symbol"> </div>
+<div class="random" > <img src="Japan/32.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/33.png" width="300" height="300" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/34.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/35.png" width="300" height="175" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/36.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/37.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/38.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/39.gif" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/40.png" width="375" height="375" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/41.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/42.png" width="300" height="200" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/43.png" width="300" height="175" alt="Japan Symbol"> </div>
+<div class="random4" > <img src="Japan/44.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/45.png" width="300" height="300" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/46.png" width="300" height="300" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/47.png" width="240" height="240" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/48.gif" width="300" height="180" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/49.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/50.png" width="300" height="200" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/51.png" width="300" height="175" alt="Japan Symbol"> </div>
+<div class="random" > <img src="Japan/52.gif" width="300" height="300" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/1.png" width="343" height="200" alt="Japan Symbol"> </div>
+<div class="random2" > <img src="Japan/2.png" width="343" height="200" alt="Japan Symbol"></div>
+<div class="random2" > <img src="Japan/3.png" width="351" height="351" alt="Japan Symbol"> </div>
+<div class="random2" > <img src="Japan/4.png" width="343" height="200" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/5.png" width="343" height="200" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/6.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/7.gif" width="300" height="300" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/8.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/9.png" width="175" height="175" alt="Japan Sym bol" > </div>
+<div class="random2" > <img src="Japan/10.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/11.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/12.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/13.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/14.png" width="275" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/15.png" width="275" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/16.png" width="375" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/17.png" width="375" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/18.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/19.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/20.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/21.gif" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/22.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/23.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/24.gif" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/25.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/26.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/27.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/28.png" width="375" height="375" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/29.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/30.png" width="300" height="200" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/31.png" width="300" height="175" alt="Japan Symbol"> </div>
+<div class="random" > <img src="Japan/32.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/33.png" width="300" height="300" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/34.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/35.png" width="300" height="175" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/36.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/37.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/38.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/39.gif" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/40.png" width="375" height="375" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/41.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/42.png" width="300" height="200" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/43.png" width="300" height="175" alt="Japan Symbol"> </div>
+<div class="random4" > <img src="Japan/44.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/45.png" width="300" height="300" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/46.png" width="300" height="300" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/47.png" width="240" height="240" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/48.gif" width="300" height="180" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/49.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/50.png" width="300" height="200" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/51.png" width="300" height="175" alt="Japan Symbol"> </div>
+<div class="random" > <img src="Japan/52.gif" width="300" height="300" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/53.svg" width="300" height="300" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/1.png" width="343" height="200" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/2.png" width="343" height="200" alt="Japan Symbol"> </div>
+<div class="random2" > <img src="Japan/3.png" width="351" height="351" alt="Japan Symbol"> </div>
+<div class="random2" > <img src="Japan/4.png" width="343" height="200" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/5.png" width="343" height="200" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/6.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/7.gif" width="300" height="300" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/8.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/9.png" width="175" height="175" alt="Japan Sym bol" > </div>
+<div class="random2" > <img src="Japan/10.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/11.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/12.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/13.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/14.png" width="275" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/15.png" width="275" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/16.png" width="375" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/17.png" width="375" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/18.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/19.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/20.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/21.gif" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/22.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/23.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/24.gif" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/25.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/26.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/27.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/28.png" width="375" height="375" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/29.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/30.png" width="300" height="200" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/31.png" width="300" height="175" alt="Japan Symbol"> </div>
+<div class="random" > <img src="Japan/32.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/33.png" width="300" height="300" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/34.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/35.png" width="300" height="175" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/36.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/37.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/38.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/39.gif" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random2"> <img src="Japan/40.png" width="375" height="375" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/41.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/42.png" width="300" height="200" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/43.png" width="300" height="175" alt="Japan Symbol"> </div>
+<div class="random3" > <img src="Japan/44.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/45.png" width="300" height="300" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/46.png" width="300" height="300" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/47.png" width="240" height="240" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/48.gif" width="300" height="180" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/49.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/50.png" width="300" height="200" alt="Japan Symbol" > </div>
+<div class="random2" > <img src="Japan/51.png" width="300" height="175" alt="Japan Symbol"> </div>
+<div class="random2" > <img src="Japan/52.gif" width="300" height="300" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/1.png" width="343" height="200" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/2.png" width="343" height="200" alt="Japan Symbol"> </div>
+<div class="random" > <img src="Japan/3.png" width="351" height="351" alt="Japan Symbol"> </div>
+<div class="random" > <img src="Japan/4.png" width="343" height="200" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/5.png" width="343" height="200" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/6.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/7.gif" width="300" height="300" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/8.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/9.png" width="175" height="175" alt="Japan Sym bol" > </div>
+<div class="random" > <img src="Japan/10.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/11.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/12.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/13.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/14.png" width="275" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/15.png" width="275" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/16.png" width="375" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/17.png" width="375" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/18.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/19.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/20.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/21.gif" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/22.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/23.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/24.gif" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/25.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random" > <img src="Japan/26.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/27.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/28.png" width="375" height="375" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/29.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/30.png" width="300" height="200" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/31.png" width="300" height="175" alt="Japan Symbol"> </div>
+<div class="random3" > <img src="Japan/32.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/33.png" width="300" height="300" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/34.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/35.png" width="300" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/36.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/37.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/38.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/39.gif" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/40.png" width="375" height="375" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/41.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/42.png" width="300" height="200" alt="Japan Symbol" > </div>
+<div class="random4" > <img src="Japan/43.png" width="300" height="175" alt="Japan Symbol"> </div>
+<div class="random3" > <img src="Japan/44.png" width="175" height="175" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/45.png" width="300" height="300" alt="Japan Symbol" > </div>
+<div class="random3" > <img src="Japan/46.png" width="300" height="300" alt="Japan Symbol"></div>
+<div class="random3" > <img src="Japan/47.png" width="240" height="240" alt="Japan Symbol"></div>
+<div class="random3" > <img src="Japan/48.gif" width="300" height="180" alt="Japan Symbol"></div>
+<div class="random2" > <img src="Japan/49.png" width="175" height="175" alt="Japan Symbol" ></div>
+<div class="random2" > <img src="Japan/50.png" width="300" height="200" alt="Japan Symbol" ></div>
+<div class="random2" > <img src="Japan/51.png" width="300" height="175" alt="Japan Symbol"></div>
+<div class="random2" > <img src="Japan/52.gif" width="300" height="300" alt="Japan Symbol"></div>
+<div class="random2" > <img src="Japan/64.png" width="300" height="200" alt="Japan Symbol" ></div>
+<div class="random2" > <img src="Japan/65.png" width="300" height="175" alt="Japan Symbol"></div>
+<div class="random" > <img src="Japan/66.png" width="300" height="300" alt="Japan Symbol"></div>
+<div class="random" > <img src="Japan/67.png" width="300" height="300" alt="Japan Symbol"></div>
+
+<div class="sphere"></div>
+<div class="random"id="outline"> <img src="Japan/outline.png" width="1600" height="680" alt="Japan Symbol"></div>
+<div class="random"id="final" > <img src="Japan/53.svg" width="300" height="300" alt="Japan Symbol"onclick="StartOrStop('Japanese Folk Music.mp3')"> <audio id="myAudio"></audio></div>
+
+
+<div class="clear"></div>
+
+
+
+</body>
+
+</html>

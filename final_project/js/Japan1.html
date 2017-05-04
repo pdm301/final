@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Drawing 1</title>
+    <link rel="stylesheet" type="text/css" href="timing.css">
+
+    <style>
+        body {
+            position:fixed;
+            background-image: url('artist.jpg');
+
+        }
+
+
+
+
+        #ball-one, #ball-two, #ball-three, #ball-four, #ball-five, #ball-six, #ball-seven, #ball-eight, #ball-nine{
+            opacity: 0.5;
+        }
+
+        #ball-one:hover, #ball-two:hover, #ball-three:hover, #ball-four:hover, #ball-five:hover, #ball-six:hover, #ball-seven:hover, #ball-eight:hover, #ball-nine:hover {
+            opacity: 1;
+        }
+
+
+    </style>
+</head>
+
+<body>
+<script src="p5.min.js"></script>
+<script src="timing.js"></script>
+
+
+
+<svg width="520" height="320">
+    <defs>
+        <filter id="blur">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+        </filter>
+    </defs>
+
+</svg>
+<div id="ball-one" class="bounce"></div>
+<div id="ball-two" class="bounce1"></div>
+<div id="ball-three" class="bounce2"></div>
+<div id="ball-four" class="bounce3"></div>
+<div id="ball-five" class="bounce4"></div>
+<div id="ball-six" class="bounce2"></div>
+<div id="ball-seven" class="bounce3"></div>
+<div id="ball-eight" class="bounce4"></div>
+<div id="ball-nine" class="bounce4"></div>
+
+</body>
+</html>
