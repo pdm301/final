@@ -6,27 +6,39 @@
     <meta charset="utf-8">
     <title>Reflective Sphere</title>
     <style>
-        body {
-            background-image: url("art.png");
+
+
+        video#vid {
+            position: fixed; right: 0; bottom: 0;
+            min-width: 100%; min-height: 100%;
+            width: auto; height: auto; z-index: -100;
+            background: url(black.png) no-repeat;
             background-size: cover;
-            background-attachment: fixed;
-            background-position: center center;
+            margin: 0 auto;
         }
-
-
 
 
     </style>
 </head>
 
 <body>
+
+
+<video autoplay loop poster="black.png" id="vid">
+    <source src="discover.mp4" type="video/webm">
+    <source src="discover.mp4" type="video/mp4">
+</video>
+
 <div id="container"></div>
 <div id="gradient"></div>
+
 
 
 <script src="js/three.min.js"></script>
 <script src="js/OrbitControls.js"></script>
 <script src="attempt1.js"></script>
+
+
 
 </body>
 </html>
